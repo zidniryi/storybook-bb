@@ -7,9 +7,12 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "build": "rollup -c --bundleConfigAsCjs"
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "serve-storybook": "serve storybook-static",
+    "deploy-storybook": "storybook-to-ghpages",
+    "build": "rollup -c --bundleConfigAsCjs",
+    "build-static-webapp": "expo build:web"
   },
   "author": "",
   "license": "ISC",
